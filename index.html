@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bitstarter Project</title>
+    <title>Mobkoo | Bitstarter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
@@ -97,6 +97,31 @@
       .footer a {
         color: #ccccff;
       }
+.embed-container {
+    position: relative;
+    padding-bottom: 66%; /* 16/9 ratio */
+    padding-top: 30px; /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+	}
+	.embed-container iframe,
+	.embed-container object,
+	.embed-container embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+.carousel img {
+  
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  max-height: 50%;
+
+}	
     </style>
   </head>
   <body>
@@ -123,6 +148,63 @@
         </div>
       </div>
     </div>
+
+<div id="myCarousel" class="carousel slide" style="float:middle">
+    <ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+		<div class="active item">
+			<img src="/mobkoo_support/HomepageSlide1.png">
+			<div class="carousel-caption">
+				<h4>Etichetta dell'immagine 01</h4>
+				<p>Testo all'interno dell'immagine 01</p>
+			</div>
+		</div>
+		<div class="item">
+			<img src="/mobkoo_support/HomepageSlide1.png">
+			<div class="carousel-caption">			
+				<h4>Etichetta dell'immagine 02</h4>
+				<p>Testo all'interno dell'immagine 02</p>
+			</div>				
+		</div>
+		<div class="item">
+			<img src="/mobkoo_support/HomepageSlide1.png">
+			<div class="carousel-caption">			
+				<h4>Etichetta dell'immagine 03</h4>
+				<p>Testo all'interno dell'immagine 03</p>
+			</div>				
+		</div>
+		<div class="item">
+			<img src="/mobkoo_support/HomepageSlide1.png">
+			<div class="carousel-caption">			
+				<h4>Etichetta dell'immagine 04</h4>
+				<p>Testo all'interno dell'immagine 04</p>
+			</div>				
+		</div>		
+		<div class="item">
+			<img src="/mobkoo_support/HomepageSlide1.png">
+			<div class="carousel-caption">			
+				<h4>Etichetta dell'immagine 05</h4>
+				<p>Testo all'interno dell'immagine 05</p>
+			</div>				
+		</div>
+		<div class="item">
+			<img src="/mobkoo_support/HomepageSlide1.png">
+			<div class="carousel-caption">			
+				<h4>Etichetta dell'immagine 06</h4>
+				<p>Testo all'interno dell'immagine 06</p>
+			</div>				
+		</div>		
+	</div>
+    <!-- Carousel nav -->
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+ </div>
+
 
     <!-- We use row-fluid inside containers to achieve a resizable layout. -->
     <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
